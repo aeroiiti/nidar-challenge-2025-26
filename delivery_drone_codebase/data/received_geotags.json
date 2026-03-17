@@ -1,0 +1,19 @@
+{
+    "received_geotags": [],
+    "payload": 2,
+    "indexed_reached": 0,
+    "geo_taged_positions": [
+
+    ],
+    "batch_planned": false,
+    "batch_size": 2,
+    "best_plan": [
+
+    ],
+    "home_lat": -35.3632599,
+    "home_lon": 149.1652326,
+    "home_alt": 584.09,
+    "currentPosid": 0,
+    "deployed": false,
+    "i": 0
+}

@@ -1,0 +1,6 @@
+py_trees
+dronekit
+pymavlink
+numpy
+pyserial
+opencv-python
