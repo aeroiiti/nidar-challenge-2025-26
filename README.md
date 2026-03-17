@@ -202,6 +202,7 @@ NIDAR/
 
 ### Design & Validation
 
+* Autodesk Fusion 360 (CAD Modelling)
 * ANSYS (Static Structural Analysis)
 
 ---
