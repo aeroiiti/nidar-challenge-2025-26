@@ -1,10 +1,10 @@
-# 🚁 Team RAPTOR: Autonomous Disaster Management Drone System
+# 🚁 Autonomous Disaster Management Drone System
 
 ## 📌 Overview
 
 This repository contains the complete software architecture, autonomous flight logic, and computer vision pipelines developed by **Team RAPTOR (ID: N250781)** for the **NIDAR Challenge 2025–26**.
 
-Our solution is a **multi-drone autonomous system** designed for rapid **survey, reconnaissance, and precision payload delivery** in disaster-stricken environments.
+Our solution is a **dual-drone autonomous system** designed for rapid **survey, reconnaissance, and precision payload delivery** in disaster-stricken environments.
 
 ---
 
@@ -30,6 +30,35 @@ Geotag Coordinates (lat, lon)
 Delivery Drone (Planning + Navigation + AI Alignment)
         ↓
 Precision Payload Deployment
+```
+
+---
+## 📂 Project Structure
+
+```bash
+NIDAR/
+├── README.md
+├── .gitignore
+│
+├── delivery_drone/
+│   ├── main.py
+│   ├── behaviours/
+│   ├── models/
+│   │   └── yolov8s_new.hef
+│   └── data/
+│       └── received_geotags.json
+│
+├── scout_drone/
+│   ├── scout.py
+│   ├── geolocation.py
+│   ├── models/
+│   │   └── yolov8s_visdrone.pt
+│   └── mission_files/
+│       └── cricketground_full.kml
+│
+└── docs/
+    ├── architecture.png
+    └── system_design.md
 ```
 
 ---
@@ -182,8 +211,8 @@ Precision Payload Deployment
 ### 🔽 Clone Repository
 
 ```bash
-git clone https://github.com/YourOrg/NIDAR.git
-cd NIDAR
+git clone https://github.com/aeroiit/nidar-challenge-2025-26.git
+cd nidar-challenge-2025-26
 ```
 
 ---
@@ -230,7 +259,7 @@ delivery_drone/models/
 
 ```bash
 cd scout_drone
-python3 scout.py mission_files/cricketground_full.kml
+python3 scout.py mission_files/PATH_TO_KML_FILE.kml
 ```
 
 > Automatically:
@@ -253,36 +282,6 @@ python3 main.py
 * Receives geotags
 * Plans optimal route
 * Aligns and drops payload
-
----
-
-## 📂 Project Structure
-
-```bash
-NIDAR/
-├── README.md
-├── .gitignore
-│
-├── delivery_drone/
-│   ├── main.py
-│   ├── behaviours/
-│   ├── models/
-│   │   └── yolov8s_new.hef
-│   └── data/
-│       └── received_geotags.json
-│
-├── scout_drone/
-│   ├── scout.py
-│   ├── geolocation.py
-│   ├── models/
-│   │   └── yolov8s_visdrone.pt
-│   └── mission_files/
-│       └── cricketground_full.kml
-│
-└── docs/
-    ├── architecture.png
-    └── system_design.md
-```
 
 ---
 
